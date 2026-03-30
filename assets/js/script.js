@@ -3,6 +3,7 @@ const errorMsg = document.getElementById("errorMsg");
 const fileInput = document.getElementById("fileInput");
 const chosenImg = document.getElementById("chosenImg");
 
+// image preview code
 fileInput.addEventListener("change", function () {
   const file = this.files[0];
   if (file) {
@@ -18,7 +19,7 @@ fileInput.addEventListener("change", function () {
   }
 });
 
-// Simple Validation on Submit
+// error message
 form.addEventListener("submit", function (e) {
   if (!form.checkValidity()) {
     e.preventDefault();

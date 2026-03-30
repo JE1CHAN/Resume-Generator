@@ -1,10 +1,8 @@
 :root {
   --accent: #7f49b4;
   --bg: #f4f4f4;
-  /* Light background */
   --card-bg: #ffffff;
   --text-main: #141414;
-  /* Inverted dark text */
   --text-muted: #555555;
   --border-color: #141414;
 }
@@ -71,19 +69,15 @@ h4 {
   }
 }
 
-/* --- Sharp Graphic Design Card --- */
 .cv-card {
   background-color: var(--card-bg);
   width: 95%;
   max-width: 1200px;
   height: 90vh;
-  /* Fits screen */
   border: 3px solid var(--border-color);
   box-shadow: 15px 15px 0px var(--accent);
-  /* Sharp, brutalist shadow */
 }
 
-/* 3-Column Simple Grid */
 .cv-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -93,11 +87,9 @@ h4 {
 .column {
   padding: 40px;
   border-right: 3px solid var(--border-color);
-  overflow-y: auto;
-  /* Allows scrolling inside a column if content gets too tall */
+  overflow-y: hidden;
 }
 
-/* Remove border from last column */
 .column:last-child {
   border-right: none;
 }
@@ -110,7 +102,6 @@ h4 {
   color: var(--accent);
 }
 
-/* --- Profile Column --- */
 .profile-pic {
   width: 100%;
   aspect-ratio: 1/1;
@@ -167,7 +158,6 @@ h4 {
   border-color: var(--accent);
 }
 
-/* --- Education & Skills Column --- */
 .sharp-hr {
   border: none;
   border-bottom: 3px solid var(--border-color);
@@ -231,11 +221,9 @@ h4 {
   border-right: 2px solid var(--border-color);
 }
 
-/* --- Job Experience / Locked Column --- */
 .locked-wrapper {
   position: relative;
   height: calc(100% - 50px);
-  /* Fill the rest of the column below title */
 }
 
 .locked-overlay {
@@ -245,9 +233,7 @@ h4 {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.7);
-  /* Whitish transparent overlay */
   backdrop-filter: blur(5px);
-  /* The blur effect */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,7 +254,6 @@ h4 {
   box-shadow: 6px 6px 0px var(--border-color);
 }
 
-/* Fake content to sit behind the blur */
 .fake-block {
   background: #e0e0e0;
   border: 2px dashed #ccc;

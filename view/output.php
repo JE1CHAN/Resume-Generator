@@ -146,17 +146,15 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
-                <!-- Column 3: Job Experience (Locked) -->
                 <div class="column">
                     <h2 class="section-title">Job Experience</h2>
 
                     <div class="locked-wrapper">
-                        <!-- The Blur Overlay -->
                         <div class="locked-overlay">
                             <div class="locked-badge">Unlock Full<br>Potential Soon</div>
                         </div>
 
-                        <!-- Fake Background Content -->
+
                         <div class="fake-block" style="height: 80px; width: 85%;"></div>
                         <div class="fake-block" style="height: 60px; width: 60%;"></div>
                         <div class="fake-block" style="height: 120px; width: 100%;"></div>
